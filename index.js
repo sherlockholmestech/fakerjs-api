@@ -4,6 +4,13 @@ const { faker } = require('@faker-js/faker');
 const app = express();
 const port = 8001;
 
+
+app.use(function(req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	next();
+  });
+
 app.get('/words/10', (req, res) => {
   res.send(faker.random.words(10));
 })
