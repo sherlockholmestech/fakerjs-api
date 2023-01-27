@@ -31,6 +31,10 @@ app.get('/words/200', (req, res) => {
 	res.send(faker.random.words(200));
   })
 
+app.get('/wake', (req, res) => {
+	res.send("Awoken!");
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })
