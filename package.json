@@ -1,0 +1,17 @@
+{
+  "name": "fakerjs-api",
+  "version": "1.0.0",
+  "description": "faker js api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sherlock Holmes",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
