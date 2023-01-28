@@ -15,6 +15,10 @@ app.get('/words/10', (req, res) => {
   res.send(faker.random.words(10));
 })
 
+app.get('/words/20', (req, res) => {
+	res.send(faker.random.words(20));
+  })
+
 app.get('/words/30', (req, res) => {
 	res.send(faker.random.words(30));
   })
