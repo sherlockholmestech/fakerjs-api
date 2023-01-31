@@ -35,6 +35,11 @@ app.get('/words/200', (req, res) => {
 	res.send(faker.random.words(200));
   })
 
+app.get('/words/900', (req, res) => {
+	res.send(faker.random.words(900));
+  })
+
+
 app.get('/wake', (req, res) => {
 	res.send("Awoken!");
 })
